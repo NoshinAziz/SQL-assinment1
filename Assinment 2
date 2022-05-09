@@ -1,0 +1,57 @@
+1. Write a query to get all data of the actor.
+Query: dvdrental=# select * from actor;
+
+2. Write a query to get the email and last name of the customer.
+Query: dvdrental=# select last_name, email from the customer;
+
+3. Write a query to get the title, description, and release year of the film.
+Query: dvdrental=# select title, description, release_year from file;
+
+4. Query city and country id in the city table.
+Query: dvdrental=# select city_id, country_id from city;
+
+ 5. Write a query to get the amount, payment date, and customer id from the customer table.
+Query: dvdrental=# select amount, payment date, and customer id from the customer table.
+
+ 6. Write a query to get all data of language.
+Query: dvdrental=# select * from language;
+language_id |         name         |     last_update     
+-------------+----------------------+---------------------
+           1 | English              | 2006-02-15 10:02:19
+           2 | Italian              | 2006-02-15 10:02:19
+           3 | Japanese             | 2006-02-15 10:02:19
+           4 | Mandarin             | 2006-02-15 10:02:19
+           5 | French               | 2006-02-15 10:02:19
+           6 | German               | 2006-02-15 10:02:19
+(6 rows)
+
+ 7. Query all columns for payment in the payment table with customer id 10.
+Query: dvdrental=# select payment from payment where customer_id=10;
+ (18532,10,1,1801,4.99,"2007-02-16 18:50:19.996577")
+ (18533,10,1,1995,4.99,"2007-02-17 09:39:40.996577")
+ (18534,10,2,2222,3.99,"2007-02-18 01:54:49.996577")
+ (18535,10,1,2814,0.99,"2007-02-19 18:30:25.996577")
+ (18536,10,1,2865,0.99,"2007-02-19 22:29:21.996577")
+ (22773,10,2,10671,8.99,"2007-03-01 15:38:25.996577")
+ (22774,10,2,11289,2.99,"2007-03-02 13:23:26.996577")
+ (22775,10,1,11405,0.99,"2007-03-02 17:42:05.996577")
+ (22776,10,2,12031,2.99,"2007-03-17 18:40:01.996577")
+ (22777,10,2,12400,2.99,"2007-03-18 07:47:38.996577")
+ (22778,10,2,13316,4.99,"2007-03-19 17:51:56.996577")
+ (22779,10,2,13917,2.99,"2007-03-20 15:11:54.996577")
+ (22780,10,1,15370,5.99,"2007-03-22 20:27:55.996577")
+ (29094,10,2,3790,3.99,"2007-04-06 12:42:11.996577")
+ (29095,10,2,4042,4.99,"2007-04-07 01:35:06.996577")
+ (29096,10,1,4255,1.99,"2007-04-07 12:42:39.996577")
+ (29097,10,1,5038,7.99,"2007-04-09 01:41:18.996577")
+ (29098,10,2,5068,2.99,"2007-04-09 03:21:44.996577")
+ (29099,10,1,5444,0.99,"2007-04-09 20:27:23.996577")
+ (29100,10,1,5905,2.99,"2007-04-10 19:09:35.996577")
+ (29101,10,1,7738,2.99,"2007-04-28 03:50:08.996577")
+ (29102,10,2,8001,6.99,"2007-04-28 13:39:21.996577")
+ (29103,10,2,8188,4.99,"2007-04-28 21:02:38.996577")
+ (29104,10,1,9935,4.99,"2007-04-30 13:55:33.996577")
+(24 rows)
+
+    8. Query last name and first name of customers in customer table whose first names are "Mary"
+​​Query: dvdrental=# select last_name, first_name from customer where first_name=’mary’
